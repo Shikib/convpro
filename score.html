@@ -190,6 +190,9 @@ b {
     $("#score").text(d["score"]);
     $("#percentile").text(d["percentile"]);
   });
+  $("#url").attr("href", $("#url").attr("href") + window.location.href)
+
+
 </script>
 <head>
 <body>
@@ -209,7 +212,7 @@ b {
   </div>
 </div>
 
-<a class="fb" href="https://www.facebook.com/sharer/sharer.php?u=" + window.location.href target="_blank">
+<a class="fb" id="url" href="https://www.facebook.com/sharer/sharer.php?u="  target="_blank">
   Share to Facebook
 </a>
 
