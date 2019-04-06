@@ -192,8 +192,11 @@ b {
   });
 </script>
 <script>
+$(window).on('load', function() {
   $("#url").attr("href", $("#url").attr("href") + window.location.href)
+  console.log($("#url").attr("href"));
   console.log("!!!");
+});
 </script>
 
 
